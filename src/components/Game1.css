@@ -1,0 +1,102 @@
+/* Full screen background */
+.full-page-container {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 97.5vh;
+  width: 99vw;
+  background-color: #f0f2f5; /* Neutral grey-blue background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Centered White Box with Shadow */
+.glass-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #e1e4e8;
+}
+
+.title {
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Result Message UI */
+.message-box {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.message-box.winner {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+/* Ticket Display */
+.ticket-container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px dashed #cbd5e0;
+  margin-bottom: 30px;
+}
+
+.label {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #94a3b8;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.number-display {
+  font-size: 48px;
+  font-weight: 800;
+  color: #2d3748;
+  letter-spacing: 4px;
+}
+
+.sum-display {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #4a5568;
+}
+
+/* Button with Hover Effects */
+.action-button {
+  background-color: #4f46e5; /* Modern Purple/Blue */
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.2);
+}
+
+.action-button:hover {
+  background-color: #4338ca;
+  transform: translateY(-2px); /* Lifts up slightly */
+  box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.4); /* Deeper shadow on hover */
+}
+
+.action-button:active {
+  transform: translateY(0); /* Pushes down when clicked */
+}
